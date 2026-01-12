@@ -68,6 +68,7 @@ p {
 }
 
 button, input[type="submit"] {
+    color: #000;
     background-color: #8D2B0B;
     border: 1px solid transparent;
     border-radius: 0.25rem;
