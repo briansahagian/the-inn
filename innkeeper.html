@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>the inn</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              document.querySelector('#hello').addEventListener('click', function() {
+                  document.querySelector('#helloresponse').innerHTML = "Well good day to you. If you don't already know, my name's Brian.\
+                    I run this place. And before me, my pop did. And before him, my pop's pop did. And before him.. well, you get the point.\
+                    I guess somebody's ought to do it!\n\n Welcome in. I didn't actually catch your name?";
+
+                  document.querySelector('#name-container').style.display = 'block';
+              }
+            );
+
+              document.querySelector('#submitName').addEventListener('click', function() {
+                let name = document.querySelector('#travelerName').value;
+                document.querySelector('#nameresponse').innerHTML = ("Nice to meet you " + name + ". I hope you're comfortable. Stay as long as you'd like, and if you need anything just say the word!");
+              }
+            );
+            }
+          );
+        </script>
+
+    </head>
+    <body>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">entrance hall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="innkeeper.html">your innkeeper</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="provisions.html">provisions & drink</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="township.html">the township</a>
+            </li>
+        </ul>
+
+        <main>
+
+          <div>
+            <img id="innkeeper" src="assets/innkeeper.gif" alt="The innkeeper at work">
+          </div>
+
+          <div class="section">
+          <!-- Button saying hello-->
+            <button id="hello">Say hello</button>
+
+            <!-- Dynamic popup response, prompt for name-->
+            <p id="helloresponse"></p>
+
+          </div>
+
+          <div id="name-container" style="display:none; margin-top: 20px;">
+            <!-- Input for entering name-->
+            <label for="travelerName">Name:</label>
+            <input type="text" id="travelerName" placeholder="Enter your name">
+            <button id="submitName">Introduce Myself</button>
+            <!-- Dynamic popup response, write about myself more-->
+            <p id="nameresponse"></p>
+          </div>
+
+        </main>
+
+    </body>
+    <footer>Copyright &#169 Brian Sahagian 2026</footer>
+</html>

@@ -1,0 +1,132 @@
+/* Importing retro gaming font */
+
+@font-face {
+  font-family: 'retro-gaming';
+  src: url('fonts/Retro Gaming.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'retro-gaming', sans-serif; /* Fallback to a generic family if the custom font fails to load */
+  background-color: #FDF6E3;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+}
+
+.nav-tabs .nav-link {
+    color: #3E2723;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #8C7A70;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+
+/* Spacing for the section class*/
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+button, input[type="submit"] {
+    color: #000;
+    background-color: #8D2B0B;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #8C7A70;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+
+footer {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  color: #667;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+  main {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #innkeeper {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  img {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
