@@ -1,4 +1,4 @@
 # the-inn
-Exercising my HTML, CSS, and JavaScript skills in an interactive website for CS50's Week 8 Homepage project.
+Exercising my HTML, CSS, and JavaScript skills in an interactive website.
 
 Find it [here](https://briansahagian.github.io/the-inn/)!
